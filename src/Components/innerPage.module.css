@@ -1,0 +1,15 @@
+
+.InnerPageDiv{
+    display: flex;
+    margin-top: 80px;
+    align-items: center;
+
+}
+.pcImg {
+    width: 300px;
+    height: 300px;
+}
+.inputAmount{
+    margin: 15px 0;
+    width: 150px;
+}

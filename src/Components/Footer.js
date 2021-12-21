@@ -1,23 +1,22 @@
 import logoFb from "./Img/facebook-letter-logo.png";
 import logoTw from "./Img/twitter.png";
 import logoIn from "./Img/Union 3.png";
-import classess from "./Footer.module.css";
+import classes from "./Footer.module.css";
 
 const Footer = () => {
   return (
-    <footer className={classess.meinFooter}>
+    <footer className={classes.meinFooter}>
       <div>
-          <p></p>
-        <address className={classess.addres}>Addres : C.Tbilisi, Balanchine 2</address>
-        <a href="https://goo.gl/maps/1gZk4XkW5qRgKcMeA" target="_blank">
+        <address className={classes.addres}>Addres : C.Tbilisi, Balanchine 2</address>
+        <a href="https://goo.gl/maps/1gZk4XkW5qRgKcMeA" target="_blank" className={classes.footerMapA}>
           Show In Map
         </a>
       </div>
-      <div className={classess.footerLogo}>
+      <div className={classes.footerLogo}>
         <a href="#" target="_blank">
           <img src={logoFb} alt="Fblogo" />
         </a>
-        <a href="#" target="_blank">
+        <a href="#" target="_blank" className={classes.instaLogoA}>
           <img src={logoIn} alt="instaLogo" />
         </a>
         <a href="#" target="_blank">
@@ -25,8 +24,8 @@ const Footer = () => {
         </a>
       </div>
       <div>
-        <address className={classess.footerContact}>
-        <a href="mailto:webmaster@example.com">Email:bootchamp.edu.ge</a>
+        <address className={classes.footerContact}>
+        <a href="mailto:webmaster@example.com" >Email:bootchamp.edu.ge</a>
         <p>Contact Num:+995 599 99 99 99</p>
         </address>
       </div>

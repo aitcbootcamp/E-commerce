@@ -7,23 +7,26 @@
     padding: 10px 25px;
     background-color: rgba(206, 202, 202, 0.671);
 }
-p:nth-child(2){
-    color: red;
+.footerContact p{
+    color: rgb(245, 7, 7);
     margin-top: 5px;
     
 }
-a:nth-child(2){
+.instaLogoA{
     margin: 0 65px;
  
 }
 
-img:hover{
+.footerLogo img:hover{
     transform: translateY(-10px);
 }
 
-a{
+.footerContact a{
     color: black
 }
 .addres{
     margin: 5px 0;
+}
+.footerMapA{
+    color: black;
 }
