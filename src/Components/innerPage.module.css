@@ -1,15 +1,48 @@
-
-.InnerPageDiv{
-    display: flex;
-    margin-top: 80px;
-    align-items: center;
-
+.SliderPageDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+/* slider img & width */
+.sliderImg{
+    width:600px;
 }
 .pcImg {
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  object-fit: cover;
 }
-.inputAmount{
-    margin: 15px 0;
-    width: 150px;
+/* discription leptop & form */
+
+
+.discription p{
+    margin: 25px 0;
+  font-size: 20px;
+  color: rgb(73, 72, 72);
+}
+
+.discription h2{
+    margin-bottom: 50px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+.discription{
+    text-align: left;
+    margin-top: 40px;
+  
+}
+.inputAmount {
+  margin: 15px 0;
+  width: 150px;
+  border: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  outline: none;
+  padding: 7px 7px;
+}
+/* text about leptop */
+.lorem {
+  margin-top: 40px;
+  width: 400px;
+  text-align: center;
+  margin: auto;
 }
