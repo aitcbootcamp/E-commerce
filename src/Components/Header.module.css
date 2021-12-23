@@ -1,6 +1,3 @@
-body {
-  height: 1500px;
-}
 .header {
   display: flex;
   justify-content: space-between;
@@ -35,14 +32,13 @@ body {
   /* font-family: ; */
 }
 
-.number{
-    color: red;
-    position: relative;
-    top:-17px;
-    right: -10px;
-    /* border: 1px solid rgba(128, 128, 128, 0.589); */
-    border-radius: 50px;
-    padding: 0 5px;
-    /* background-color: rgba(128, 128, 128, 0.568); */
-    
+.number {
+  color: red;
+  position: relative;
+  top: -17px;
+  right: -10px;
+  /* border: 1px solid rgba(128, 128, 128, 0.589); */
+  border-radius: 50px;
+  padding: 0 5px;
+  /* background-color: rgba(128, 128, 128, 0.568); */
 }
