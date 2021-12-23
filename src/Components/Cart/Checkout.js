@@ -1,10 +1,10 @@
 import CheckoutBtn from "./CheckoutBtn";
 import classes from "./Checkout.module.css";
 
-const Checkout = () => {
+const Checkout = (props) => {
   const items = [
     { name: "iPhone 8", price: 200, id: 1, amount: 1 },
-    { name: "Marsha Headphones", price: 80, id: 2, amount: 1 },
+    { name: "Marshal Headphones", price: 80, id: 2, amount: 1 },
     { name: "type-c Charger", price: 20, id: 3, amount: 3 },
     { name: "Samsung TV", price: 500, id: 4, amount: 1 },
   ];
@@ -33,7 +33,7 @@ const Checkout = () => {
             ${" "}
           </span>
         </p>
-        <CheckoutBtn />
+        <CheckoutBtn checkoutClick={props.checkoutClick} />
       </div>
     </>
   );
