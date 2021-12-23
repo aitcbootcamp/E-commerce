@@ -1,4 +1,4 @@
-mport AliceCarousel from "react-alice-carousel";
+import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import sonyImg from "./Img/compiuter-6.jpg";
 import hpLeptop from "./Img/compiuter-11.jpg";
