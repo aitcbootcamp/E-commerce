@@ -5,6 +5,7 @@
   border: none;
   cursor: pointer;
   color: white;
+
   margin-top: 10px;
 }
 .buttonAdd:hover{
@@ -12,3 +13,6 @@
   background: none;
   border: 1px solid black;
 }
+
+
+  margin-top: 10px;

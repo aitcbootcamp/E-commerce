@@ -1,10 +1,12 @@
 import classes from './AddToCartButton.module.css'
-const AddToCartButton = () => {
+
+const AddToCartButton = (props) => {
+
   return (
-    <div>
-      <button className={classes.buttonAdd}> Add To Cart</button>
-    </div>
+    <form>
+      <button type="submit" onClick={props.add} className={classes.buttonAdd}> Add To Cart</button>
+    </form>
+   
   );
 };
-
-export default AddToCartButton;
+export default AddToCartButton; 
