@@ -1,5 +1,4 @@
-// slider
-import AliceCarousel from "react-alice-carousel";
+mport AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import sonyImg from "./Img/compiuter-6.jpg";
 import hpLeptop from "./Img/compiuter-11.jpg";
@@ -21,7 +20,11 @@ const InnerPage = () => {
     console.log(localSt);
   }
   const [cart, setCart] = useState(items);
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 27fc73ebb5132bc67ef6771f089df64716e5ec72
   const add = (e) => {
     e.preventDefault();
     const description = {
@@ -36,12 +39,21 @@ const InnerPage = () => {
     console.log(description);
     const addItem = (description) => {
       setCart((prevItems) => {
+<<<<<<< HEAD
         return [...prevItems, description];
       });
       localSt = [...items, description];
       localStorage.setItem("items", JSON.stringify(cart));
     };
     addItem(description);
+=======
+        return [...prevItems,description];
+      });
+      localSt = [...items, description];
+      localStorage.setItem("items",JSON.stringify(cart))
+    }
+addItem(description)
+>>>>>>> 27fc73ebb5132bc67ef6771f089df64716e5ec72
   };
 
   return (
@@ -70,6 +82,11 @@ const InnerPage = () => {
           <p>Prodaction type : Leptop</p>
           <ProdactCount />
           <AddToCartButton add={add} />
+<<<<<<< HEAD
+=======
+          
+          
+>>>>>>> 27fc73ebb5132bc67ef6771f089df64716e5ec72
         </div>
       </div>
       <p className={classes.lorem}>
