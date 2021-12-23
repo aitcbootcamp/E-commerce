@@ -1,0 +1,27 @@
+.checkout {
+  padding: 20px 30px;
+  background-color: rgb(245, 242, 233);
+  width: fit-content;
+  font-size: 16px;
+  line-height: 28px;
+  margin-left: 60px;
+  box-shadow: 1px 1px 7px 1px rgb(184, 126, 94, 0.2);
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: rgb(38, 48, 58);
+  font-weight: bold;
+}
+
+.amount {
+  color: rgb(38, 48, 58);
+  font-size: 18px;
+  margin: 10px 0;
+}
+.itemAmount {
+  margin-left: 3px;
+  color: rgb(38, 48, 58);
+}
