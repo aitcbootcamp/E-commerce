@@ -21,7 +21,7 @@ const InnerPage = () => {
     console.log(localSt);
   }
   const [cart, setCart] = useState(items);
-  
+
   const add = (e) => {
     e.preventDefault();
     const description = {
@@ -36,12 +36,12 @@ const InnerPage = () => {
     console.log(description);
     const addItem = (description) => {
       setCart((prevItems) => {
-        return [...prevItems,description];
+        return [...prevItems, description];
       });
       localSt = [...items, description];
-      localStorage.setItem("items",JSON.stringify(cart))
-    }
-addItem(description)
+      localStorage.setItem("items", JSON.stringify(cart));
+    };
+    addItem(description);
   };
 
   return (
@@ -70,8 +70,6 @@ addItem(description)
           <p>Prodaction type : Leptop</p>
           <ProdactCount />
           <AddToCartButton add={add} />
-          
-          
         </div>
       </div>
       <p className={classes.lorem}>
