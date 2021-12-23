@@ -5,9 +5,5 @@
   border: none;
   cursor: pointer;
   color: white;
-}
-.buttonAdd:hover{
-  color: rgb(0, 0, 0);
-  background: none;
-  border: 1px solid black;
-}
+
+  margin-top: 10px;
