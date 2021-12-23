@@ -1,0 +1,48 @@
+body {
+  height: 1500px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(192, 125, 136, 0.74);
+  box-shadow: 1px 1px 20px 2px rgba(175, 117, 158, 0.74);
+  /* padding: 5px; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+}
+
+.logo {
+  /* width: 200px; */
+  height: 40px;
+}
+
+.logoCart {
+  width: 26px;
+  height: 13px;
+  margin-right: 25px;
+  margin-top: 5px;
+}
+
+.home {
+  font-size: 35px;
+  display: inline;
+  position: relative;
+  top: -10px;
+  /* font-family: ; */
+}
+
+.number{
+    color: red;
+    position: relative;
+    top:-17px;
+    right: -10px;
+    /* border: 1px solid rgba(128, 128, 128, 0.589); */
+    border-radius: 50px;
+    padding: 0 5px;
+    /* background-color: rgba(128, 128, 128, 0.568); */
+    
+}
