@@ -4,7 +4,6 @@ import Footer from "./Components/Footer";
 import Slider from "./Components/Slider/Slider";
 import Cart from "./Components/Cart/Cart";
 
-
 function App() {
   return (
     <>

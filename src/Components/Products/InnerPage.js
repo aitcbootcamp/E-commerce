@@ -1,4 +1,4 @@
-// slider
+
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import sonyImg from "./Img/compiuter-6.jpg";
