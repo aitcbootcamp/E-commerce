@@ -9,8 +9,7 @@ function App() {
     <>
       <div className="App">
         <Header />
-        <InnerPage />
-        <Checkout />
+        {/* <InnerPage /> */}
         <Footer />
       </div>
     </>
