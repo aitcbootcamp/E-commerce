@@ -1,14 +1,9 @@
 import classes from "./CheckoutBtn.module.css";
 
-const CheckoutBtn = () => {
-  const checkoutClick = (e) => {
-    e.preventDefault();
-
-    console.log("k");
-  };
+const CheckoutBtn = (props) => {
   return (
     <>
-      <button onClick={checkoutClick} className={classes.button}>
+      <button onClick={props.checkoutClick} className={classes.button}>
         Checkout
       </button>
     </>
