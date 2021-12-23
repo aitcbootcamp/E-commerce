@@ -1,13 +1,10 @@
-body {
-  height: 1500px;
-}
 .header {
   display: flex;
   justify-content: space-between;
   border: 1px solid rgb(192, 125, 136, 0.74);
-  box-shadow: 1px 1px 20px 2px rgba(175, 117, 158, 0.74);
+  box-shadow: 1px 1px 20px 2px rgba(38, 48, 58, 0.1);
   /* padding: 5px; */
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -35,14 +32,13 @@ body {
   /* font-family: ; */
 }
 
-.number{
-    color: red;
-    position: relative;
-    top:-17px;
-    right: -10px;
-    /* border: 1px solid rgba(128, 128, 128, 0.589); */
-    border-radius: 50px;
-    padding: 0 5px;
-    /* background-color: rgba(128, 128, 128, 0.568); */
-    
+.number {
+  color: red;
+  position: relative;
+  top: -17px;
+  right: -10px;
+  /* border: 1px solid rgba(128, 128, 128, 0.589); */
+  border-radius: 50px;
+  padding: 0 5px;
+  /* background-color: rgba(128, 128, 128, 0.568); */
 }

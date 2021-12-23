@@ -5,22 +5,19 @@ import "./reset.css";
 // style for header
 import classes from "./Header.module.css";
 // cart number/ ანუ კალათის გასაყიდი ციფრი
-import CartNumber from "./cartNumber";
-
+import CartNumber from ".//cartNumber";
 
 const Header = () => {
   return (
     <header className={classes.header}>
       <div>
-        <img src={logo} className={classes.logo} alt="logo"/>
+        <img src={logo} className={classes.logo} alt="logo" />
         <h1 className={classes.home}>Home</h1>
       </div>
       <div>
-        <CartNumber />  
+        <CartNumber />
       </div>
     </header>
-    
-    
   );
 };
 

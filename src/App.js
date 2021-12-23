@@ -1,9 +1,8 @@
 import "./App.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
-// ჩემთვის მერე უნდა წაიშალოს
-import InnerPage from "./Components/InnerPage";
-
+import Slider from "./Components/Slider/Slider";
+import Cart from "./Components/Cart/Cart";
 
 
 function App() {
@@ -11,10 +10,11 @@ function App() {
     <>
       <div className="App">
         <Header />
-        <InnerPage />
+        <Cart />
+        {/* <Slider /> */}
+
         <Footer />
       </div>
-     
     </>
   );
 }

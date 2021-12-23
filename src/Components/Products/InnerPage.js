@@ -70,6 +70,8 @@ addItem(description)
           <p>Prodaction type : Leptop</p>
           <ProdactCount />
           <AddToCartButton add={add} />
+          
+          
         </div>
       </div>
       <p className={classes.lorem}>
