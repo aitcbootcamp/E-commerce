@@ -4,7 +4,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import sonyImg from "./Img/compiuter-6.jpg";
 import hpLeptop from "./Img/compiuter-11.jpg";
 import asusLeptop from "./Img/compiuter-25.jpg";
-import hpPavilion from './Img/HPPavilion.jpg'
+import hpPavilion from "./Img/HPPavilion.jpg";
 
 import classes from "./innerPage.module.css";
 // add To cart bottom import
@@ -38,8 +38,7 @@ const InnerPage = () => {
             <input
               type="text"
               placeholder="amount"
-              className={classes.inputAmount}
-            ></input>
+              className={classes.inputAmount}></input>
             <br />
             <AddToCartButton />
           </form>
