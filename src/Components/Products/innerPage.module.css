@@ -31,7 +31,18 @@
   
 }
 
-/* text about leptop */
+
+.inputAmount {
+  margin: 15px 0;
+  width: 150px;
+  border: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  outline: none;
+  padding: 7px 7px;
+}
+
+
 .lorem {
   margin-top: 40px;
   width: 400px;
