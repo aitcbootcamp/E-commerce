@@ -20,10 +20,10 @@ function HomePageProductList() {
             photoes={product.photoes}
           />
         ))}
-        <button className={classes.button}>
-          <span className={classes.viewMore}>View More</span>
-        </button>
       </div>
+      <button className={classes.button}>
+        <span className={classes.viewMore}>View More</span>
+      </button>
     </>
   );
 }

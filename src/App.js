@@ -11,6 +11,8 @@ function App() {
         <Header />
         <Slider />
         <HomePageProductList />
+        <HomePageProductList />
+
         <Footer />
       </div>
     </>
