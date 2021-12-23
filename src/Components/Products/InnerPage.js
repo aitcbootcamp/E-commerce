@@ -1,5 +1,4 @@
-// slider
-import AliceCarousel from "react-alice-carousel";
+mport AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import sonyImg from "./Img/compiuter-6.jpg";
 import hpLeptop from "./Img/compiuter-11.jpg";
@@ -9,7 +8,41 @@ import hpPavilion from "./Img/HPPavilion.jpg";
 import classes from "./innerPage.module.css";
 // add To cart bottom import
 import AddToCartButton from "./AddToCartButton";
+// add to prodact count button - 1 +
+import ProdactCount from "./ProdactCount";
+import { useState } from "react";
+
 const InnerPage = () => {
+  let items = [];
+  let localSt = JSON.parse(localStorage.getItem("items"));
+  if (localSt) {
+    items = localSt;
+    console.log(localSt);
+  }
+  const [cart, setCart] = useState(items);
+  
+  const add = (e) => {
+    e.preventDefault();
+    const description = {
+      name: "HP Pavilion x360 Convertible",
+      price: 1500,
+      model: "hp",
+      prodactiontype: "leptop",
+      numCount: 1,
+    };
+    // localStorage.setItem("gurami", JSON.stringify(description));
+    // console.log(localStorage.getItem("gurami"));
+    console.log(description);
+    const addItem = (description) => {
+      setCart((prevItems) => {
+        return [...prevItems,description];
+      });
+      localSt = [...items, description];
+      localStorage.setItem("items",JSON.stringify(cart))
+    }
+addItem(description)
+  };
+
   return (
     <>
       <div className={classes.SliderPageDiv}>
@@ -34,14 +67,10 @@ const InnerPage = () => {
           <p>price:1500$</p>
           <p>Model : Hp</p>
           <p>Prodaction type : Leptop</p>
-          <form>
-            <input
-              type="text"
-              placeholder="amount"
-              className={classes.inputAmount}></input>
-            <br />
-            <AddToCartButton />
-          </form>
+          <ProdactCount />
+          <AddToCartButton add={add} />
+          
+          
         </div>
       </div>
       <p className={classes.lorem}>
