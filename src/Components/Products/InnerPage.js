@@ -1,16 +1,15 @@
-
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import sonyImg from "./Img/compiuter-6.jpg";
-import hpLeptop from "./Img/compiuter-11.jpg";
-import asusLeptop from "./Img/compiuter-25.jpg";
-import hpPavilion from "./Img/HPPavilion.jpg";
+import sonyImg from "../Img/compiuter-6.jpg";
+import hpLeptop from "../Img/compiuter-11.jpg";
+import asusLeptop from "../Img/compiuter-25.jpg";
+import hpPavilion from "../Img/HPPavilion.jpg";
 
 import classes from "./innerPage.module.css";
 // add To cart bottom import
 import AddToCartButton from "./AddToCartButton";
 // add to prodact count button - 1 +
-import ProdactCount from "./ProdactCount";
+import ProdactCount from "../ProdactCount";
 import { useState } from "react";
 
 const InnerPage = () => {
