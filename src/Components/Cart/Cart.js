@@ -2,6 +2,7 @@ import Checkout from "./Checkout";
 import classes from "./Cart.module.css";
 import Form from "./Form";
 import { useState } from "react";
+import ProductList from "../Products/ProductList";
 const Cart = () => {
   const [buttonClick, setButtonClick] = useState(false);
 
@@ -12,10 +13,13 @@ const Cart = () => {
   };
   return (
     <>
+      <div className={classes.title}>Cart Content:</div>
       <div className={classes.cart}>
+        <ProductList />
+
         <Checkout checkoutClick={checkoutClick}></Checkout>
-        {buttonClick && <Form></Form>}
       </div>
+      {buttonClick && <Form setButtonClick={setButtonClick}></Form>}
     </>
   );
 };

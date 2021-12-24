@@ -1,6 +1,6 @@
 .MainDiv {
   width: 220.9px;
-  height: 350.9px;
+  height: 350.9px !important;
   background-color: white;
   padding-top: 20px;
   margin-left: 80px;

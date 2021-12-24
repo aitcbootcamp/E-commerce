@@ -1,0 +1,22 @@
+.cart {
+  display: flex;
+  margin-top: 40px;
+  margin-right: 50px;
+}
+
+.cart :nth-child(1) {
+  flex-shrink: 5;
+  /* flex-basis: 10px; */
+}
+
+.cart :nth-child(2) {
+  height: 30%;
+  /* margin-top: 40px; */
+}
+.title {
+  font-size: 1.5rem;
+  color: rgb(38, 48, 58);
+  position: relative;
+  right: 500px;
+  top: 80px;
+}
