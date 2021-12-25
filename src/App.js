@@ -8,16 +8,20 @@ import SideBarProduct from "./Components/sideBar/sideBarProduct";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cart from "./Components/Cart/Cart";
 import Homepage from "./HomePage";
+import ErrorPage from "./ErrorPage";
 function App() {
   return (
     <>
-      {/* <Router>
-        <Routes>
-          <Route path="/"></Route>
-          
-        </Routes>
+      {/* <Homepage /> */}
 
-      </Router> */}
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Homepage />}></Route>
+          <Route path="/cart" element={<Cart />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+      </Router>
     </>
   );
 }

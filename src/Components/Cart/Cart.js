@@ -3,6 +3,8 @@ import classes from "./Cart.module.css";
 import Form from "./Form";
 import { useState } from "react";
 import CartItem from "./CartItem";
+import Header from "../Header";
+import Footer from "../Footer";
 
 const Cart = () => {
   const [buttonClick, setButtonClick] = useState(false);
@@ -15,6 +17,7 @@ const Cart = () => {
   };
   return (
     <>
+      {/* <Header /> */}
       {/* <div className={classes.title}>Cart Content:</div> */}
       <div className={classes.cart}>
         <div className={classes.items}>
@@ -34,6 +37,7 @@ const Cart = () => {
       </div>
 
       {buttonClick && <Form setButtonClick={setButtonClick}></Form>}
+      <Footer />
     </>
   );
 };
