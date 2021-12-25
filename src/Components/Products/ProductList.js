@@ -3,22 +3,16 @@ import AppleWatch from "../Img/compiuter-6.jpg";
 import classes from "./ProductList.module.css";
 
 function ProductList(props) {
-  const info = [
-    { description: "AppleWatch S7", price: 500, photoes: AppleWatch },
-    { description: "AppleWatch S7", price: 500, photoes: AppleWatch },
-    { description: "AppleWatch S7", price: 500, photoes: AppleWatch },
-    { description: "AppleWatch S7", price: 500, photoes: AppleWatch },
-    { description: "AppleWatch S7", price: 500, photoes: AppleWatch },
-    { description: "AppleWatch S7", price: 500, photoes: AppleWatch },
-    { description: "AppleWatch S7", price: 500, photoes: AppleWatch },
-  ];
+  axios.get('data.json')
 
   return (
     <>
       <div className={classes.productArrangement}>
         {info.map((product) => (
           <ProductDescription
+            category={ }
             description={product.description}
+            name={ }
             price={product.price}
             photoes={product.photoes}
           />
