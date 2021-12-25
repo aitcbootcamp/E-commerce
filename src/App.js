@@ -10,6 +10,7 @@ import {
   Routes,
   Route
 } from "react-router-dom"
+import Cart from "./Components/Cart/Cart";
 function App() {
   return (
     <>
@@ -23,6 +24,7 @@ function App() {
         </div>
         <HomePageProductList />
         <HomePageProductList />
+
         {/* <InnerPage /> */}
         <Footer />
       </div>

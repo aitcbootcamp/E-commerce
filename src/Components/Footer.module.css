@@ -1,32 +1,30 @@
-.meinFooter{
-    margin-top: 90px;
-    display: flex;
-    justify-content: space-between;
-    z-index: 1;
-    border: 1px solid rgba(206, 202, 202, 0.671);
-    padding: 10px 25px;
-    background-color: rgba(206, 202, 202, 0.671);
+.meinFooter {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  border: 1px solid rgba(206, 202, 202, 0.671);
+  padding: 10px 25px;
+  background-color: rgba(206, 202, 202, 0.671);
 }
-.footerContact p{
-    color: rgb(245, 7, 7);
-    margin-top: 5px;
-    
+.footerContact p {
+  color: rgb(245, 7, 7);
+  margin-top: 5px;
 }
-.instaLogoA{
-    margin: 0 65px;
- 
+.instaLogoA {
+  margin: 0 65px;
 }
 
-.footerLogo img:hover{
-    transform: translateY(-10px);
+.footerLogo img:hover {
+  transform: translateY(-10px);
 }
 
-.footerContact a{
-    color: black
+.footerContact a {
+  color: black;
 }
-.addres{
-    margin: 5px 0;
+.addres {
+  margin: 5px 0;
 }
-.footerMapA{
-    color: black;
+.footerMapA {
+  color: black;
 }

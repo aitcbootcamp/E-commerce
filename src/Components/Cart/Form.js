@@ -1,10 +1,11 @@
 import { useState } from "react";
 import classes from "./form.module.css";
 
-function Form() {
+function Form(props) {
   //states for onsubmit
   const [submitedname, setsubmitedname] = useState("");
   const [submitedlastname, setsubmitedlastname] = useState("");
+  const [city, setCity] = useState("");
   const [address, setadress] = useState("");
   const [number, setnumber] = useState("");
   const [email, setemail] = useState("");
@@ -16,11 +17,12 @@ function Form() {
     const obj = {
       name: submitedname,
       lastName: submitedlastname,
+      city: city,
       address: address,
       phone: number,
       email: email,
     };
-
+    props.setButtonClick(false);
     console.log(obj);
   };
 
@@ -31,7 +33,9 @@ function Form() {
   const changeLastName = (e) => {
     setsubmitedlastname(e.target.value);
   };
-
+  const changeCity = (e) => {
+    setCity(e.target.value);
+  };
   const changeAddress = (e) => {
     setadress(e.target.value);
   };
@@ -47,9 +51,16 @@ function Form() {
   return (
     <>
       <form className={classes.flexed} onSubmit={submit}>
-        <span className={classes.close}>Close</span>
-        <label>Name</label>
+        <span
+          className={classes.close}
+          onClick={() => {
+            props.setButtonClick(false);
+          }}>
+          Close
+        </span>
+        <label>First Name</label>
         <input
+          required
           type="text"
           className={classes.input}
           onChange={changeName}></input>
@@ -58,24 +69,34 @@ function Form() {
         <input
           className={classes.input}
           type="text"
+          required
           onChange={changeLastName}></input>
+        <label>City</label>
+        <input
+          className={classes.input}
+          type="text"
+          required
+          onChange={changeCity}></input>
 
         <label>Address</label>
         <input
           className={classes.input}
           type="text"
+          required
           onChange={changeAddress}></input>
 
-        <label>Contact Info</label>
+        <label>Phone Number</label>
         <input
           className={classes.input}
-          type="number"
+          type="text"
+          required
           onChange={changeNumber}></input>
 
         <label>Email</label>
         <input
           className={classes.input}
           type="email"
+          required
           onChange={changeEmail}></input>
 
         <button className={classes.btn} type="submit">

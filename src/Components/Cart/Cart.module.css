@@ -1,0 +1,29 @@
+.cart {
+  display: grid;
+  margin: auto;
+  width: 90%;
+  grid-template-columns: 75% 30%;
+  margin-top: 30px;
+}
+
+/* .cart :nth-child(2) {
+  height: 30%;
+  width: 300px;
+} */
+.title {
+  width: fit-content;
+  font-size: 1.5rem;
+  color: rgb(38, 48, 58);
+  /* position: relative;
+  right: 600px;
+  top: 40px; */
+  text-align: left;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  /* width: 50%; */
+  /* display: inline-block; */
+}
