@@ -1,37 +1,28 @@
-import classes from "../Slider/sliderstyle.css";
+import classes from "../Slider/sliderstyle.module.css";
 import { images } from "./Helpers/CouruselData";
 import { useState } from "react";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
-
+import sonyImg from "../Img/compiuter-6.jpg";
+import hpLeptop from "../Img/compiuter-11.jpg";
+import asusLeptop from "../Img/compiuter-25.jpg";
+import hpPavilion from "../Img/HPPavilion.jpg";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 function Slider() {
-  //state for switching images
-  const [curimg, setcurimg] = useState(0);
-
   return (
-    <div className="courusel">
-      <div
-        className="couruselinner"
-        style={{ backgroundImage: `url(${images[curimg].img})` }}>
-        <div
-          className="left"
-          onClick={() => {
-            curimg > 0 && setcurimg(curimg - 1);
-          }}>
-          <ArrowBackIosIcon />
-        </div>
-        <div className="center">
-          <h1 className={classes.h1}> {images[curimg].title}</h1>
-          <p> {images[curimg].subtitle}</p>
-        </div>
-        <div
-          className="right"
-          onClick={() => {
-            curimg < images.length - 1 && setcurimg(curimg + 1);
-          }}>
-          <ArrowForwardIosIcon />
-        </div>
-      </div>
+    <div className={classes.sliderImg}>
+      <AliceCarousel autoPlay autoPlayInterval="3000" infinite>
+        <p>
+          <img src={sonyImg} alt="pc" className={classes.pcImg} />
+        </p>
+        <p>
+          <img src={hpLeptop} alt="pc" className={classes.pcImg} />
+        </p>
+        <p>
+          <img src={asusLeptop} alt="pc" className={classes.pcImg} />
+        </p>
+      </AliceCarousel>
     </div>
   );
 }
