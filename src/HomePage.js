@@ -7,13 +7,11 @@ import Footer from "./Components/Footer";
 const Homepage = () => {
   return (
     <>
-      {/* <Header /> */}
       <div className={classes.homepage}>
         <SideBarProduct></SideBarProduct>
         <Slider></Slider>
       </div>
       <HomePageProductList></HomePageProductList>
-      <Footer />
     </>
   );
 };

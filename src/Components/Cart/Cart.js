@@ -37,7 +37,6 @@ const Cart = () => {
       </div>
 
       {buttonClick && <Form setButtonClick={setButtonClick}></Form>}
-      <Footer />
     </>
   );
 };
