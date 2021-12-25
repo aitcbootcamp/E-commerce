@@ -16,9 +16,9 @@ function App() {
       <div className="App">
         <Header />
         <div className="AppSliderAndSideBar">
-          <Routes>
-            <SideBarProduct />
-          </Routes>
+
+          <SideBarProduct />
+
           <Slider />
         </div>
         <HomePageProductList />
