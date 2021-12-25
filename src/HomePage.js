@@ -11,7 +11,15 @@ const Homepage = () => {
         <SideBarProduct></SideBarProduct>
         <Slider></Slider>
       </div>
-      <HomePageProductList></HomePageProductList>
+      <HomePageProductList
+        title="Laptops"
+        category="laptop"></HomePageProductList>
+      <HomePageProductList
+        title="Accessories"
+        category="accessories"></HomePageProductList>
+      <HomePageProductList
+        category="mobile"
+        title="Mobile Phones"></HomePageProductList>
     </>
   );
 };

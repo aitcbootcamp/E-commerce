@@ -12,7 +12,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 function Slider() {
   return (
     <div className={classes.sliderImg}>
-      <AliceCarousel autoPlay autoPlayInterval="3000" infinite>
+      <AliceCarousel autoPlay autoPlayInterval="2000" infinite>
         <p>
           <img src={sonyImg} alt="pc" className={classes.pcImg} />
         </p>
