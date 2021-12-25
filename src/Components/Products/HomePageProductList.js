@@ -13,13 +13,12 @@ function HomePageProductList(props) {
       setInfo(res.data);
     });
   }, []);
-  console.log(info[7]);
   return (
     <>
       <div className={classes.title}>{props.title}</div>
       <div className={classes.ProductListflex}>
         {info
-          .filter((item) => item.category == props.category)
+          .filter((item) => item.category === props.category)
           .slice(0, 4)
           .map((product) => (
             <ProductDescription

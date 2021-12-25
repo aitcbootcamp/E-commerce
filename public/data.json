@@ -193,7 +193,7 @@
     "id":24,
     "name":"JBL headphones",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      "price":"200$",
+      "price":"95$",
       "img":"https://brain-images-ssl.cdn.dixons.com/4/1/10204614/u_10204614.jpg"
     }, 
     {
@@ -201,7 +201,7 @@
         "id":25,
         "name":"type-c charger",
           "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-          "price":"200$",
+          "price":"20$",
           "img":"https://i5.walmartimages.com/asr/a13202d4-174c-410a-8d6d-d24fce52baf4_1.5c2aabfecde1db4148be57dcb4531ad1.jpeg"
         }, 
    
@@ -210,7 +210,7 @@
             "id":26,
             "name":"VR Glasses",
               "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-              "price":"200$",
+              "price":"70$",
               "img":"https://media.istockphoto.com/photos/african-american-man-standing-at-night-with-vr-headset-on-virtual-picture-id1285766758?k=20&m=1285766758&s=170667a&w=0&h=sbhtZeGIBdjruTeEjLWXpjeeBi9vvBiFXEKaS14znEc="
             }, 
 
