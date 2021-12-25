@@ -13,7 +13,7 @@ function App() {
         <Slider />
         <HomePageProductList />
         <HomePageProductList />
-
+        {/* <Cart /> */}
         {/* <InnerPage /> */}
         <Footer />
       </div>
