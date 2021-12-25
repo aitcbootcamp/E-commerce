@@ -8,26 +8,25 @@ import SideBarProduct from "./Components/sideBar/sideBarProduct"
 import {
   BrowserRouter,
   Routes,
+  Router,
   Route
 } from "react-router-dom"
 import Cart from "./Components/Cart/Cart";
 function App() {
   return (
     <>
-      <div className="App">
-        <Header />
-        <div className="AppSliderAndSideBar">
-
-          <SideBarProduct />
-
-          <Slider />
+      <Router>
+        <div className="App">
+          <Header />
+          <div className="AppSliderAndSideBar">
+            <SideBarProduct />
+            <Slider />
+          </div>
+          <HomePageProductList />
+          <Footer />
         </div>
-        <HomePageProductList />
-        <HomePageProductList />
 
-        {/* <InnerPage /> */}
-        <Footer />
-      </div>
+      </Router>
     </>
   );
 }
