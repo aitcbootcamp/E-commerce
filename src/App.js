@@ -8,7 +8,7 @@ import ErrorPage from "./ErrorPage";
 function App() {
   return (
     <>
-<<<<<<< HEAD
+
 
       <div className="App">
         <Header />
@@ -32,7 +32,7 @@ function App() {
         </Routes>
         <Footer />
       </Router>
->>>>>>> 115fce3472740d8eb78fa24ebdf8a056b8dafbbd
+
     </>
   );
 }
