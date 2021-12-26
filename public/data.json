@@ -1,5 +1,4 @@
-[
-    {"category":"computer",
+[    {"category":"computer",
       "id":1,
     "name":"sony desktop computer",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -46,7 +45,7 @@
     
     
     {
-        "Category":"laptop",
+        "category":"laptop",
         "id":7,
         "name":"Macbook",
         
@@ -55,7 +54,7 @@
       "img":"https://i0.wp.com/www.entertainmentbox.com/wp-content/uploads/2019/12/Apple-MacBook-Pro-13-inch-2019-8-GB-Core-i5-1.4.jpg?fit=1256%2C708&ssl=1"
     },
     {
-        "Category":"laptop",
+        "category":"laptop",
         "id":8,
 
         "name":"dell laptop",
@@ -65,7 +64,7 @@
     },
 
     {
-        "Category":"laptop",
+        "category":"laptop",
         "id":9,
         "name":"hp laptop",
         
@@ -74,7 +73,7 @@
       "img":"https://5.imimg.com/data5/SO/UH/MY-14352828/hp-laptop-500x500.jpg"
     },
     {
-        "Category":"laptop",
+        "category":"laptop",
         "id":10,
         "name":"Asus laptop",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -83,7 +82,7 @@
     },
     
     {
-        "Category":"laptop",
+        "category":"laptop",
         "id":11,
         "name":"Acer laptop",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -91,7 +90,7 @@
       "img":"https://www.ubuy.ge/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNzF2dlhHbWRLV0wuX0FDX1NMMTUwMF8uanBn.jpg"
     },
     {
-        "Category":"mobile",
+        "category":"mobile",
         "id":12,
         "name":"iPhone",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -99,7 +98,7 @@
       "img":"https://cdn.tmobile.com/content/dam/t-mobile/en-p/cell-phones/apple/Apple-iPhone-12-Pro-Max/Pacific-Blue/Apple-iPhone-12-Pro-Max-Pacific-Blue-frontimage.png"
     },
     {
-        "Category":"mobile",
+        "category":"mobile",
         "id":13,
         "name":"Pixel",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -107,7 +106,7 @@
       "img":"https://mobilestoreonline.com/wp-content/uploads/2021/05/google-pixel-500x500-1.jpg"
     },
     {
-        "Category":"mobile",
+        "category":"mobile",
         "id":14,
         "name":"Samsung",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -115,7 +114,7 @@
       "img":"https://images.samsung.com/sg/smartphones/galaxy-s21/buy/s21_family_kv_mo_img.jpg"
     },
     {
-        "Category":"mobile",
+        "category":"mobile",
         "id":15,
         "name":"huawei",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -123,7 +122,7 @@
       "img":"https://consumer-img.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/phones/nova-y60/images/pc/huawei-nova-y60-kv.png"
     },
     {
-        "Category":"mobile",
+        "category":"mobile",
         "id":16,
         "name":"OnePlus",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -131,7 +130,7 @@
       "img":"https://www.notebookcheck-cn.com/uploads/tx_nbc2/Arcticsky_2080a_euna.png"
     },
     {
-        "Category":"tablet",
+        "category":"tablet",
         "id":17,
         "name":"iPad",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -139,7 +138,7 @@
       "img":"https://cdn1.it4profit.com/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fill:540/bg:f6f6f6/q:100/plain/s3://catalog-products/200916100956100874/201109150017496186.png@webp"
     }, 
     {
-        "Category":"tablet",
+        "category":"tablet",
         "id":18,
         "name":"Samsung tablet",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -147,7 +146,7 @@
       "img":"https://cdn.pocket-lint.com/r/s/1200x630/assets/images/149561-tablets-review-samsung-galaxy-tab-s5e-review-image1-3unpifevlj.jpg"
     }, 
     {
-        "Category":"tablet",
+        "category":"tablet",
         "id":19,
         "name":"Surface pro",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -156,7 +155,7 @@
     }, 
 
    {
-        "Category":"tablet",
+        "category":"tablet",
         "id":20,
         "name":"Lenovo Tablet",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -164,7 +163,7 @@
       "img":"https://m.media-amazon.com/images/I/716LsyDg3fL._AC_SL1500_.jpg"
     }, 
     {
-        "Category":"tablet",
+        "category":"tablet",
         "id":21,
         "name":"Honor Tablet",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -172,7 +171,7 @@
       "img":"https://fdn.gsmarena.com/imgroot/news/20/07/honor-tablet-6-x6-ofic/-727/gsmarena_005.jpg"
     }, 
     {
-        "Category":"tablet",
+        "category":"tablet",
         "id":22,
         "name":"Huawei Tablet",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -181,7 +180,7 @@
     }, 
 
     {
-        "Category":"accessories",
+        "category":"accessories",
         "id":23,
         "name":"Beats",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -190,33 +189,33 @@
     }, 
 
   {
-    "Category":"accessories",
+    "category":"accessories",
     "id":24,
     "name":"JBL headphones",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      "price":"200$",
+      "price":"95$",
       "img":"https://brain-images-ssl.cdn.dixons.com/4/1/10204614/u_10204614.jpg"
     }, 
     {
-        "Category":"accessories",
+        "category":"accessories",
         "id":25,
         "name":"type-c charger",
           "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-          "price":"200$",
+          "price":"20$",
           "img":"https://i5.walmartimages.com/asr/a13202d4-174c-410a-8d6d-d24fce52baf4_1.5c2aabfecde1db4148be57dcb4531ad1.jpeg"
         }, 
    
         {
-            "Category":"accessories",
+            "category":"accessories",
             "id":26,
             "name":"VR Glasses",
               "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-              "price":"200$",
+              "price":"70$",
               "img":"https://media.istockphoto.com/photos/african-american-man-standing-at-night-with-vr-headset-on-virtual-picture-id1285766758?k=20&m=1285766758&s=170667a&w=0&h=sbhtZeGIBdjruTeEjLWXpjeeBi9vvBiFXEKaS14znEc="
             }, 
 
             {
-                "Category":"accessories",
+                "category":"accessories",
                 "id":27,
                 "name":"JBL speaker",
                   "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",

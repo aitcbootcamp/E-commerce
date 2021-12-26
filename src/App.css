@@ -1,14 +1,12 @@
 .App {
   text-align: center;
   background-color: #f5f5f5;
-
 }
-.AppSliderAndSideBar{
- display: flex;
- flex-direction: row;
- position: relative;
- padding-left: 30px;
-
+.AppSliderAndSideBar {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding-left: 30px;
 }
 
 .App-logo {
@@ -34,7 +32,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: rgb(38, 48, 58);
 }
 
 @keyframes App-logo-spin {

@@ -2,6 +2,7 @@
   margin-top: 90px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   z-index: 1;
   border: 1px solid rgba(206, 202, 202, 0.671);
   padding: 10px 25px;

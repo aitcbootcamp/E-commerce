@@ -1,4 +1,4 @@
-.courusel {
+/* .courusel {
   width: 60%;
   height: 600px;
 
@@ -49,4 +49,12 @@ body {
   color: white;
   cursor: pointer;
   font-size: 30px;
+} */
+.sliderImg {
+  margin-left: 170px;
+  width: 600px;
+}
+.pcImg {
+  width: 500px;
+  object-fit: cover;
 }

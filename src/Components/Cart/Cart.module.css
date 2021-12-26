@@ -27,3 +27,17 @@
   /* width: 50%; */
   /* display: inline-block; */
 }
+
+.empty {
+  height: 70vh;
+  text-align: center;
+  font-size: 2rem;
+}
+.emptyText {
+  margin: auto;
+  padding-top: 150px;
+}
+
+.emptyLink {
+  font-size: 0.8rem;
+}
