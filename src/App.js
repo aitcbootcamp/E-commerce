@@ -15,18 +15,18 @@ import Cart from "./Components/Cart/Cart";
 function App() {
   return (
     <>
-      <Router>
-        <div className="App">
-          <Header />
-          <div className="AppSliderAndSideBar">
-            <SideBarProduct />
-            <Slider />
-          </div>
-          <HomePageProductList />
-          <Footer />
-        </div>
 
-      </Router>
+      <div className="App">
+        <Header />
+        <div className="AppSliderAndSideBar">
+          <SideBarProduct />
+          <Slider />
+        </div>
+        <HomePageProductList />
+        <Footer />
+      </div>
+
+
     </>
   );
 }
