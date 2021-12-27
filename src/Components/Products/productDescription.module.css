@@ -1,6 +1,6 @@
 .MainDiv {
   width: 220.9px;
-  height: 350.9px;
+  height: 350.9px !important;
   background-color: white;
   padding-top: 20px;
   margin-left: 80px;
@@ -29,6 +29,6 @@
   border: none;
 }
 .button:hover {
-  background-color: white;
+  background-color: #77b2f5;
   border-radius: 5px;
 }

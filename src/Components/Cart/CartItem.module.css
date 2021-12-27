@@ -1,0 +1,20 @@
+.wrapper {
+  width: 300px !important;
+  background-color: rgb(88, 102, 117, 0.1);
+  margin-bottom: 30px;
+  padding: 50px 0;
+  border-radius: 40px;
+  text-align: center;
+}
+
+.wrapper img {
+  width: 250px;
+}
+
+.wrapper button {
+  border: none;
+  background-color: rgb(238, 54, 52);
+  color: rgb(245, 242, 233);
+  border-radius: 8px;
+  padding: 6px;
+}

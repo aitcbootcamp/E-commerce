@@ -1,28 +1,40 @@
 import AppleWatch from "../Img/compiuter-6.jpg";
 import classes from "./HomePageProductList.module.css";
 import ProductDescription from "./ProductDescription";
+import axios from "axios";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
-function HomePageProductList() {
-  const info = [
-    { description: "AppleWatch S7", price: 500, photoes: AppleWatch },
-    { description: "AppleWatch S7", price: 500, photoes: AppleWatch },
-    { description: "AppleWatch S7", price: 500, photoes: AppleWatch },
-    { description: "AppleWatch S7", price: 500, photoes: AppleWatch },
-  ];
+function HomePageProductList(props) {
+  const [info, setInfo] = useState([]);
 
+  useEffect(() => {
+    axios.get("data.json").then((res) => {
+      setInfo(res.data);
+    });
+  }, []);
   return (
     <>
+      <div className={classes.title}>{props.title}</div>
       <div className={classes.ProductListflex}>
-        {info.map((product) => (
-          <ProductDescription
-            description={product.description}
-            price={product.price}
-            photoes={product.photoes}
-          />
-        ))}
+        {info
+          .filter((item) => item.category === props.category)
+          .slice(0, 4)
+          .map((product) => (
+            <ProductDescription
+              category={product.category}
+              description={product.description}
+              name={product.name}
+              id={product.id}
+              key={product.id}
+              price={product.price}
+              photoes={product.img}
+            />
+          ))}
       </div>
       <button className={classes.button}>
-        <span className={classes.viewMore}>View More</span>
+        {/* <Link to=""> */} <span className={classes.viewMore}>View More</span>
+        {/* </Link> */}
       </button>
     </>
   );

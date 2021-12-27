@@ -6,16 +6,23 @@ import "./reset.css";
 import classes from "./Header.module.css";
 // cart number/ ანუ კალათის გასაყიდი ციფრი
 import CartNumber from ".//cartNumber";
+import { Link, BrowserRouter as Router } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className={classes.header}>
       <div>
-        <img src={logo} className={classes.logo} alt="logo" />
-        <h1 className={classes.home}>Home</h1>
+        {" "}
+        <Link to="/">
+          {" "}
+          <img src={logo} className={classes.logo} alt="logo" />
+        </Link>
       </div>
       <div>
-        <CartNumber />
+        <Link to="/cart">
+          {" "}
+          <CartNumber />{" "}
+        </Link>
       </div>
     </header>
   );
