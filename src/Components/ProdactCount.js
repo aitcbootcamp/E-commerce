@@ -1,28 +1,27 @@
-import React, { useState } from "react";
+
 // css
 import classes from "./ProdactCount.module.css";
 const ProdactCount = (props) => {
-  const [count, setCount] = useState(1);
   const minusNumber = (e) => {
     e.preventDefault();
-    if (count == 1) {
-      setCount(1);
+    if (props.count == 1) {
+      props.setCount(1);
     } else {
-      setCount(count - 1);
+      props.setCount(props.count - 1);
     }
   };
   const pluss = (e) => {
     e.preventDefault();
-    setCount(count + 1);
+    props.setCount(props.count + 1);
   };
-  console.log(count);
+  console.log(props.count);
 
   return (
     <form>
       <button onClick={minusNumber} className={classes.minus}>
         -
       </button>
-      <span className={classes.number}>{count}</span>
+      <span className={classes.number}>{props.count}</span>
       <button onClick={pluss} className={classes.pluss}>
         +
       </button>
