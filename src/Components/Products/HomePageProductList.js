@@ -4,21 +4,16 @@ import ProductDescription from "./ProductDescription";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import useData from "../../useData";
 
 function HomePageProductList(props) {
-  const [info, setInfo] = useState([]);
+  const { data, filteredData } = useData(props.category);
 
-  useEffect(() => {
-    axios.get("data.json").then((res) => {
-      setInfo(res.data);
-    });
-  }, []);
   return (
     <>
       <div className={classes.title}>{props.title}</div>
       <div className={classes.ProductListflex}>
-        {info
-          .filter((item) => item.category === props.category)
+        {filteredData
           .slice(0, 4)
           .map((product) => (
             <ProductDescription
