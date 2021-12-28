@@ -10,19 +10,11 @@ function App() {
     <>
       <Router>
         <Header />
-<<<<<<< HEAD
-        {/* <Slider />
-        <HomePageProductList />
-        <HomePageProductList /> */}
-        <InnerPage />
-=======
         <Routes>
           <Route path="/" element={<Homepage />}></Route>
           <Route path="/cart" element={<Cart />} />
           <Route path="*" element={<ErrorPage />} />
-          {/* <Route path="/products" element={}> </Route> */}
         </Routes>
->>>>>>> 115fce3472740d8eb78fa24ebdf8a056b8dafbbd
         <Footer />
       </Router>
     </>

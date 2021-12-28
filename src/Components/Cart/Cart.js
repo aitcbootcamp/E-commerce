@@ -3,8 +3,6 @@ import classes from "./Cart.module.css";
 import Form from "./Form";
 import { useState } from "react";
 import CartItem from "./CartItem";
-import Header from "../Header";
-import Footer from "../Footer";
 import { Link } from "react-router-dom";
 const Cart = () => {
   const [buttonClick, setButtonClick] = useState(false);
