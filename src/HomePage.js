@@ -8,7 +8,8 @@ const Homepage = () => {
   return (
     <>
       <div className={classes.homepage}>
-        <SideBarProduct></SideBarProduct>
+
+        <SideBarProduct />
         <Slider></Slider>
       </div>
       <HomePageProductList
