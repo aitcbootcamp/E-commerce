@@ -13,7 +13,8 @@ import ProdactCount from "../ProdactCount";
 import { useState } from "react";
 
 const InnerPage = () => {
-  let items = [];
+  const [count, setCount] = useState(1);
+  let items=[];
   let localSt = JSON.parse(localStorage.getItem("items"));
   if (localSt) {
     items = localSt;
@@ -28,10 +29,8 @@ const InnerPage = () => {
       price: 1500,
       model: "hp",
       prodactiontype: "leptop",
-      numCount: 1,
+      count:count,
     };
-    // localStorage.setItem("gurami", JSON.stringify(description));
-    // console.log(localStorage.getItem("gurami"));
     console.log(description);
     const addItem = (description) => {
       setCart((prevItems) => {
@@ -67,7 +66,7 @@ const InnerPage = () => {
           <p>price:1500$</p>
           <p>Model : Hp</p>
           <p>Prodaction type : Leptop</p>
-          <ProdactCount />
+          <ProdactCount count={count} setCount={setCount} />
           <AddToCartButton add={add} />
         </div>
       </div>
