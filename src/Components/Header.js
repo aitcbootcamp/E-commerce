@@ -12,16 +12,13 @@ const Header = () => {
   return (
     <header className={classes.header}>
       <div>
-        {" "}
         <Link to="/">
-          {" "}
           <img src={logo} className={classes.logo} alt="logo" />
         </Link>
       </div>
       <div>
         <Link to="/cart">
-          {" "}
-          <CartNumber />{" "}
+          <CartNumber />
         </Link>
       </div>
     </header>
