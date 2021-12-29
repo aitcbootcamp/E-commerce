@@ -1,25 +1,27 @@
 import classes from "./Header.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { CartContext } from "../store/cartContext";
+import { useContext } from "react";
+
 const CartNumber = () => {
-  
-  
-  let result ;
-   
+  const { cart } = useContext(CartContext);
+  let result;
 
   const countAdd = JSON.parse(localStorage.getItem("items"));
+  // console.log(countAdd);
+  const [number, setNumber] = useState(result);
   const reducer = (previousValue, currentValue) => previousValue + currentValue;
-  if(!countAdd){
+  if (!countAdd) {
     result = "";
-  }else{
-    const newCountAdd = countAdd.map((count) => count.count)
-      result = newCountAdd.reduce(reducer, 0)
-       console.log(result);
+  } else {
+    const cartItemAmounts = countAdd.map((count) => count.count);
+    result = cartItemAmounts.reduce(reducer, 0);
   }
 
-
-  const [number, setnumber] = useState(result)
-  
-  
+  useEffect(() => {
+    setNumber(result);
+    console.log("effect");
+  }, [cart]);
   return (
     <>
       <div className={classes.logoCart}>
@@ -31,7 +33,6 @@ const CartNumber = () => {
         </svg>
       </div>
       <span className={classes.number}>{number}</span>
-      
     </>
   );
 };

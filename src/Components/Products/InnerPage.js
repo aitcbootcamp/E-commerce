@@ -12,35 +12,8 @@ import AddToCartButton from "./AddToCartButton";
 import ProdactCount from "../ProdactCount";
 import { useState } from "react";
 
-const InnerPage = () => {
+const InnerPage = (props) => {
   const [count, setCount] = useState(1);
-  let items=[];
-  let localSt = JSON.parse(localStorage.getItem("items"));
-  if (localSt) {
-    items = localSt;
-    console.log(localSt);
-  }
-  const [cart, setCart] = useState(items);
-
-  const add = (e) => {
-    e.preventDefault();
-    const description = {
-      name: "HP Pavilion x360 Convertible",
-      price: 1500,
-      model: "hp",
-      prodactiontype: "leptop",
-      count:count,
-    };
-    console.log(description);
-    const addItem = (description) => {
-      setCart((prevItems) => {
-        return [...prevItems, description];
-      });
-      localSt = [...items, description];
-      localStorage.setItem("items", JSON.stringify(cart));
-    };
-    addItem(description);
-  };
 
   return (
     <>
@@ -67,7 +40,16 @@ const InnerPage = () => {
           <p>Model : Hp</p>
           <p>Prodaction type : Leptop</p>
           <ProdactCount count={count} setCount={setCount} />
-          <AddToCartButton add={add} />
+          <AddToCartButton
+            count={count}
+            name={props.name}
+            price={props.price}
+            category={props.category}
+            description={props.description}
+            id={props.id}
+            key={props.id}
+            img={props.img}
+          />
         </div>
       </div>
       <p className={classes.lorem}>

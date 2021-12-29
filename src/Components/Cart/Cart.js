@@ -4,27 +4,31 @@ import Form from "./Form";
 import { useState } from "react";
 import CartItem from "./CartItem";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../../store/cartContext";
 const Cart = () => {
+  let { cart, setCart, items, localSt } = useContext(CartContext);
   const [buttonClick, setButtonClick] = useState(false);
-  const cartItems = JSON.parse(localStorage.getItem("items"));
-  console.log(cartItems);
+  // const cartItems = JSON.parse(localStorage.getItem("items"));
+  console.log(cart);
   const checkoutClick = (e) => {
     e.preventDefault();
     setButtonClick(true);
-    console.log("k");
   };
   return (
     <>
-      {cartItems ? (
+      {cart ? (
         <div className={classes.cart}>
           <div className={classes.items}>
-            {cartItems.map((product) => (
+            {cart.map((product) => (
               <CartItem
+                key={product.id}
                 description={product.description}
                 price={product.price}
-                amount={product.numCount}
+                count={product.count}
                 title={product.name}
-                img="https://images.unsplash.com/photo-1587831990711-23ca6441447b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZGVza3RvcCUyMGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                img={product.img}
+                id={product.id}
               />
             ))}
           </div>

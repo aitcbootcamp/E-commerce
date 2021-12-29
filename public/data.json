@@ -3,8 +3,11 @@
     "name":"sony desktop computer",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
     "price":"1000$",
-    "img":" https://4.imimg.com/data4/OH/WA/MY-5602102/34-500x500.jpg"
+    "img":"https://4.imimg.com/data4/OH/WA/MY-5602102/34-500x500.jpg",
+    "img2":"https://4.imimg.com/data4/OH/WA/MY-5602102/34-500x500.jpg",
+    "img3":"https://4.imimg.com/data4/OH/WA/MY-5602102/34-500x500.jpg"
     },
+
     {"category":"computer",
       "id":2,
      "name":"Asus desktop computer",
