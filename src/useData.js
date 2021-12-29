@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-const useData = (category) => {
+const useData = (category, id) => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
@@ -11,15 +11,18 @@ const useData = (category) => {
 
     }, []);
 
-    console.log({ data, category })
+    //console.log({ data, category })
     const filteredData = data
         .filter((item) => {
             return item.category === category
         })
-    //make sure to pass id as an argument
-    // const producDetails = data
-    //     .filter((item) => item.id === id)
-    return { data, filteredData }
+    console.log({ data, id });
+
+    const filteredData = data
+        .filter((item) => {
+            return item.id === id
+        })
+
 }
 
 export default useData;

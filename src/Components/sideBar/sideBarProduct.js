@@ -7,12 +7,11 @@ function SideBarProduct() {
         <>
             <div className={classes.mainDiv}>
                 <ul className={classes.ulList}>
-
                     <li className={classes.slideBarLi}><Link to="/products/computer">Computer </Link></li>
                     <li className={classes.slideBarLi}><Link to="/products/laptop"> Laptop </Link></li>
-                    <li className={classes.slideBarLi}>Mobile Phones</li>
-                    <li className={classes.slideBarLi}>Tablet</li>
-                    <li className={classes.slideBarLi}>Accesories</li>
+                    <li className={classes.slideBarLi}><Link to="/products/mobile"> Mobile Phones </Link></li>
+                    <li className={classes.slideBarLi}><Link to="/products/tablet"> Tablet </Link></li>
+                    <li className={classes.slideBarLi}><Link to="/products/accessories"> Accesories </Link></li>
 
                 </ul>
             </div>

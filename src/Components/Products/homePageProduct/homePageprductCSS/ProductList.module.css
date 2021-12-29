@@ -1,0 +1,6 @@
+.productArrangement{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 100px;
+}

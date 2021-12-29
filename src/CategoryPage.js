@@ -1,7 +1,7 @@
 import React from "react"
 import { useParams } from "react-router-dom";
 import useData from "./useData"
-import ProductDescription from "./Components/Products/ProductDescription";
+import ProductDescription from "./Components/Products/homePageProduct/ProductDescription";
 
 const Category = () => {
     const params = useParams();
