@@ -3,6 +3,7 @@ import classes from "./Checkout.module.css";
 
 const Checkout = (props) => {
   const items = JSON.parse(localStorage.getItem("items"));
+  console.log(typeof items[0].price);
 
   return (
     <>
@@ -22,7 +23,7 @@ const Checkout = (props) => {
           <span>
             {items.reduce(
               (previousValue, currentValue) =>
-                previousValue + currentValue.price,
+                parseInt(previousValue) + parseInt(currentValue.price),
               0
             )}
             ${" "}
