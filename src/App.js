@@ -17,6 +17,7 @@ function App() {
       <CartProvider>
         <Router>
           <Header />
+          {/* <InnerPage /> */}
           <Routes>
             <Route path="/" element={<Homepage />}></Route>
             <Route path="/cart" element={<Cart />} />

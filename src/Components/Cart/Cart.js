@@ -17,7 +17,7 @@ const Cart = () => {
   };
   return (
     <>
-      {cart ? (
+      {cart.length > 0 ? (
         <div className={classes.cart}>
           <div className={classes.items}>
             {cart.map((product) => (
@@ -40,6 +40,7 @@ const Cart = () => {
         <div className={classes.empty}>
           <p className={classes.emptyText}>Cart is empty</p>
           <Link to="/">
+            {" "}
             <p className={classes.emptyLink}>Start Shopping</p>{" "}
           </Link>
         </div>
