@@ -6,7 +6,7 @@ import ProductDescription from "./Components/Products/ProductDescription";
 const Category = () => {
   const params = useParams();
   const category = params.category;
-  const { data, filteredData } = useData(category);
+  const { data, filteredData } = useData({ category });
 
   console.log("filtdata", filteredData);
 
