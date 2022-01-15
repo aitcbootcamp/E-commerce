@@ -19,7 +19,7 @@ const CartItem = (props) => {
   return (
     <>
       <div id={props.id} className={classes.wrapper}>
-        <img src={props.img} />
+        <img height="200px" src={props.img} />
         <p>{props.title}</p>
         <p>{props.count} x</p>
         <p>{props.price} </p>

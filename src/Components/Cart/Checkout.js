@@ -3,7 +3,6 @@ import classes from "./Checkout.module.css";
 
 const Checkout = (props) => {
   const items = JSON.parse(localStorage.getItem("items"));
-  console.log(typeof items[0].price);
 
   return (
     <>

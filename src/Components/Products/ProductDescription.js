@@ -16,7 +16,6 @@ const ProductDescription = (props) => {
   };
   return (
     <Link to={`/product/${props.id}`}>
-
       <div
         className={classes.MainDiv}
         description={props.description}
@@ -25,7 +24,7 @@ const ProductDescription = (props) => {
           <img onClick={info} src={props.img} className={classes.AppleWatch} />
           <div className={classes.infoOfItme}>
             <p>{props.name}</p>
-            <h1>{props.price}</h1>
+            <h1>{props.price}$</h1>
             {/* <button onClick={info} className={classes.button}>
             Add to Cart
           </button> */}
@@ -38,9 +37,8 @@ const ProductDescription = (props) => {
               price={props.price}
             />
           </div>
-
         </div>
-      </div >
+      </div>
     </Link>
   );
 };

@@ -8,11 +8,10 @@ const Homepage = () => {
   return (
     <>
       <div className={classes.homepage}>
-
         <SideBarProduct />
         <Slider></Slider>
       </div>
-      <HomePageProductList
+      {/* <HomePageProductList
         title="Laptops"
         category="laptop"></HomePageProductList>
       <HomePageProductList
@@ -20,7 +19,7 @@ const Homepage = () => {
         category="accessories"></HomePageProductList>
       <HomePageProductList
         category="mobile"
-        title="Mobile Phones"></HomePageProductList>
+        title="Mobile Phones"></HomePageProductList> */}
     </>
   );
 };

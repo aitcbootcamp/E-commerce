@@ -5,13 +5,7 @@ import { CartContext } from "../../store/cartContext";
 const AddToCartButton = (props) => {
   let { cart, setCart, items, localSt } = useContext(CartContext);
   // console.log(localSt);
-  const addItem = (description) => {
-    setCart((prevItems) => {
-      return [...prevItems, description];
-    });
-    localSt = [...items, description];
-    localStorage.setItem("items", JSON.stringify(cart));
-  };
+
   const add = (e) => {
     e.preventDefault();
     console.log("?");
@@ -25,8 +19,31 @@ const AddToCartButton = (props) => {
       count: props.count,
     };
 
+    const addItem = (description) => {
+      const filtered = cart.filter((item) => item.id === description.id);
+
+      if (filtered.length < 1) {
+        setCart((prevItems) => {
+          return [...prevItems, description];
+        });
+        localSt = cart;
+        console.log(cart);
+        console.log(localSt);
+      } else {
+        const amounts = cart.map((item) =>
+          item.id === description.id
+            ? { ...item, count: (item.count += description.count) }
+            : item
+        );
+        setCart(amounts);
+        localStorage.setItem("items", JSON.stringify(amounts));
+      }
+    };
     addItem(description);
   };
+  localStorage.setItem("items", JSON.stringify(cart));
+
+  console.log(cart);
   return (
     <form>
       <button type="submit" className={classes.buttonAdd} onClick={add}>

@@ -37,7 +37,8 @@
 }
 
 .number {
-  color: red;
+  color: ivory;
+  background-color: red;
   position: relative;
   top: -17px;
   right: -10px;

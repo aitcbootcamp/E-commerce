@@ -20,8 +20,8 @@ const CartNumber = () => {
 
   useEffect(() => {
     setNumber(result);
-    console.log("effect");
   }, [cart]);
+
   return (
     <>
       <div className={classes.logoCart}>
